@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script>
+var score = 0;
+var answer = prompt("В Полотняной стране " + "По реке Простыне " + "Плывёт параход " + "То назад, то перёд, " + "А за ним такая гладь -" + "Ни морщинки не видеать");
+answer = answer.toLowerCase();  
+  if(answer == "утюг" || answer == "утюжёк"){
+    score++;
+    alert("Хороший ответ!");
+  }
+  else
+    alert("Неверно!");
+	
+answer = prompt("Вот иголки и булавки выползают из-под лавки, на меня они глядят, молока они хотят.");
+answer = answer.toLowerCase();
+  if(answer == "ёж" || answer == "еж" || answer == "ежик" || answer == "ёжик"){
+    score++;
+    alert("Ответ засчитан!");
+  }
+  else 
+    alert("Неверно!");
+
+answer = prompt("Страну чудес откроем мы и встретимся с героями в строчках, на листочках, где станции на точках.");
+answer = answer.toLowerCase();
+  if(answer == "книга" || answer == "книжка"){
+    score++;
+    alert("Верно!");
+    }
+  else
+    alert("Неверно!");
+alert("Отгадано " + score + " ответов.");
+</script>
+

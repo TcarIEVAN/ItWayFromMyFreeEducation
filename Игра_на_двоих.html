@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+
+  var answer = parseInt(Math.random() * 100);
+
+  var playerNumber = prompt("Введи имя");
+  var playerNumber = prompt("Введи имя второго игрока");
+
+  while (True){
+    
+	var userAnswer = prompt("Угадайте число от 0 до 100.\nХодит игрок " + playerNumber + ".\nДля выхода нажми q");
+	
+	if(userAnswer == "q")
+	  break;
+	  
+    userAnswer = parseInt(userAnswer);
+    
+	if(userAnswer == answer){
+      alert("Молодец! " + playerNumber + " Угадывает!");
+	  break;
+    } else if(userAnswer > answer){
+      alert("Введено слишком большое число.");
+    } else if(userAnswer < answer){
+      alert("Введено слишком маленькое число.");
+	}  
+    if(playerNumber == 1)
+	  playerNumber = 2;
+	else
+      playerNumber = 1;	
+
+</script>
+</head>
+</html>

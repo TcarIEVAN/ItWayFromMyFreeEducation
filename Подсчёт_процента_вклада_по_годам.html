@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+  var summ = +prompt("Вводи бабки:");
+  var percent = +prompt("Вводи проценты:");
+  var n = +prompt("На сколько лет?")
+  
+  percent = percent/100;
+  
+  var result = "Изменение размера вклада по годам:\n";
+  
+  for(var i = 1; i <= n; i++) {
+    summ = summ + (summ * percent);
+	result += i + " год: " + summ.toFixed(3) + " рублей\n";
+	}
+alert(result);
+</script>	

@@ -1,0 +1,16 @@
+<script>
+var start = 10; // Начало отсчета(включительно)
+var n = 16; // до какого числа считаем
+var step = 2; // Шаг
+var sum = 0; // здесь будем хранить сумму всех чисел от start до n
+var next = start; // Следующее число
+while (next <= n) {
+sum = sum + next;
+next = next + step;
+}
+document.write("Задача: подсчитать сумму чисел от 10 до N с шагом 2 и вывести результат на экран." + "<br>")
+document.write("Начало отсчета:" + start + "<br>");
+document.write("Число, до которого считаем:" + n + "<br>");
+document.write("Шаг:" + step + "<br>");
+document.write("Итоговая сумма:" + sum + "<br>");
+</script>
