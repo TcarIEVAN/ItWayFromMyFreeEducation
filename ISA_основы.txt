@@ -1,0 +1,48 @@
+  // ISA - Instruction Set Architecture определяет интерфейс между железом и софтом 
+  (Язык программирования и процессор)
+  Своего рода компилятор, заложенных на исполнение бинарного кода в процессор 
+  и перенос в память для знакомого уже языка программирования
+  Типы ISA
+  1) MIPS
+  2) x64/x86
+  3) ARM
+  Архитектура определяет логические, арифметические, битвайс операторы
+  Arithmetics, Logical, Bitwise shifts:
+  -add $d, $s, $t
+  -sub $d, $s, $t
+  -mult $s, $t
+  -div $s, $t
+  -and $d, $s, $t, or $d, $s, $t, nor $d, $s, $t
+  -addi $t2, $t2                                           инкременты и дикременты
+  -sll $d, $t, shamt, srl $d, $t, shamt
+  Data Transfer
+  -mfhi $d
+  -mfcZ $t, $d
+  -mflo $d
+  -sw $t,C($S)
+  -SB $t,C($s)
+  Control flow:
+  -$sp
+  -$gp
+  -$fp
+  -beq $s,St,C
+  -bne $s, $t, C
+  -jal C
+  -$ra
+  
+  
+  MIPS (Microprocessor without Interlocked Pipeline Stages)
+  Архитектура с упрощённым сетом инструкций RISC (Reduced instruction set computer)
+  
+  
+  Instruction Fetch                 IF         Вывод инструкции из памяти >>>>
+  Instruction Decode Register Fetch ID         Декодирование инструкции   >>>>
+  Execute Address Calc.             EX         Осуществить действия       >>>>
+  Memore Access                     MEM        Дополнительный оборот данных>>>
+  Write Back                        WB         Записать, ернуть данные    > finish
+  
+  
+  RISC и SISC (Complex instruction set computer - Сложный набор инструкций)
+  Обычно RISC в ARM (телефоны)
+  SISC в x64/x86
+  
