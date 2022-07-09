@@ -1,0 +1,6 @@
+list = []
+list.append("ты, пьян, иди, домой")
+print(list)
+two = [1, 2]
+list.extend(two)
+print(list)
